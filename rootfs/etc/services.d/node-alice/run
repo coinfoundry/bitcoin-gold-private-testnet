@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "* Starting node-alice ..."
+/usr/bin/bgoldd -daemon -datadir=/data/node-alice
+
+s6-svc -d /var/run/s6/services/node-alice
+
