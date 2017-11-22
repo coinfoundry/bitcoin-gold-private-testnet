@@ -1,6 +1,6 @@
 #!/bin/bash
 
 echo "* Starting node-bob ..."
-/usr/bin/bgoldd -daemon -datadir=/data/node-bob
+/usr/local/bin/bgoldd -daemon -datadir=/data/node-bob
 
 s6-svc -d /var/run/s6/services/node-bob

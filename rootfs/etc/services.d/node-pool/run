@@ -1,6 +1,6 @@
 #!/bin/bash
 
 echo "* Starting node-pool ..."
-/usr/bin/bgoldd -daemon -datadir=/data/node-pool
+/usr/local/bin/bgoldd -daemon -datadir=/data/node-pool
 
 s6-svc -d /var/run/s6/services/node-pool
