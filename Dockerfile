@@ -14,7 +14,7 @@ RUN tar xzf /tmp/libsodium-1.0.15.tar.gz -C /tmp && cd /tmp/libsodium-1.0.15 && 
     ./configure && make && make test && make install && ldconfig
 
 RUN cd /tmp && git clone https://github.com/coinfoundry/BTCGPU && \
-    cd BTCGPU && ./autogen.sh && ./configure --with-incompatible-bdb && make && make install && echo 6
+    cd BTCGPU && ./autogen.sh && ./configure --with-incompatible-bdb && make && make install && echo 7
 
 RUN apt-get update -y && apt-get -y install unzip && \
     tar xzf /tmp/s6-overlay-amd64.tar.gz -C / && \
